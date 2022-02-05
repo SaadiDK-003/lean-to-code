@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<header>
+    <div class="top-bar">
+        <span><a href="#"><i class="fas fa-map-marker-alt"></i> KDA Flats Shadman Town</a></span>
+        <span><a href="#"><i class="fab fa-whatsapp"></i> +92 3218731546</a></span>
+        <span><a href="#"><i class="far fa-envelope"></i> info.webostics.com</a></span>
+    </div>
+    <div class="desktop-menu">
+        <h3>Webostics</h3>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </nav>
+        <a href="#"><button>Contact Us</button></a>
+    </div>
+</header>
+
+<section class="banner">
+    <div class="slider">
+        <ul class="owl-carousel owl-slider">
+            <li>
+                <img src="https://picsum.photos/1440/600" alt="random1">
+            </li>
+            <li>
+                <img src="https://picsum.photos/1450/400" alt="random1">
+            </li>
+            <li>
+                <img src="https://picsum.photos/1460/400" alt="random1">
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="about-us">
+        <h2>About Us</h2>
+    <div class="grid-items">
+        <div class="item info">
+            
+        </div>
+        <div class="item img">
+
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    lazyLoad:true,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+</script>
+
+</body>
+</html>

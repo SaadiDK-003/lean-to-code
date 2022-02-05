@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header, section{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+header .top-bar{
+    height: 30px;
+    background-color: rgb(245, 90, 34);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header .top-bar a{
+    color: #fff;
+}
+
+header .desktop-menu{
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header .desktop-menu nav ul, section ul{
+    list-style: none;
+}
+header .desktop-menu nav ul li{
+    display: inline-block;
+    padding-inline: 10px;
+}
+header .desktop-menu nav ul li a{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    transition: all .3s ease 0s;
+    position: relative;
+}
+header .desktop-menu nav ul li a:hover{
+    color: rgba(52, 111, 189,1);
+}
+header .desktop-menu nav ul li a:before{
+    content: '';
+    border-bottom: 2px solid lime;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform: scale(0);
+    transition: all .5s ease 0s;
+}
+header .desktop-menu nav ul li a:hover:before{
+    transform: scale(1);
+}
+
+header .desktop-menu h3{
+    background-color: rgb(245, 90, 34);
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .2rem;
+    border-radius: 5px;
+
+}
+
+header .desktop-menu a button{
+    background-color: rgba(52, 111, 189,1);
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: .5rem;
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+.desktop-menu a button:hover{
+    background-color: rgba(52, 111, 189,.7);
+    border-radius: .5rem;
+}
+
+.banner .slider{
+    overflow: hidden;
+}
+.banner .slider .owl-slider li img{
+    max-width: 100%;
+    width: 100%;
+    height: 400px;
+}
+
+.slider .owl-carousel .owl-dots{
+    position: relative;
+    bottom: 30px;
+    text-align: center;
+}
+
+.slider .owl-carousel .owl-dots > button {
+    padding: 3px 10px !important;
+    margin-inline: 10px;
+    background: #eee;
+    border-radius: 5px;
+}
+.slider .owl-carousel .owl-dots > button.active {
+    background-color: rgb(245, 90, 34);
+}
+
+.about-us{
+    height: 400px;
+    /* background-color: rgba(0, 0, 0, .1); */
+}
+.about-us h2{
+    text-align: center;
+    margin: 20px auto 30px auto;
+    position: relative;
+    width: max-content;
+    cursor: default;
+    text-transform: uppercase;
+}
+.about-us h2::before{
+    content: '';
+    border-bottom: 3px solid rgb(245, 90, 34);
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+}
+.about-us .grid-items{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.about-us .grid-items .item{
+    height: 300px;
+}
+
+.about-us .grid-items .item{
+    background-color: lightgreen;
+}
+.about-us .grid-items .item:last-child{
+    background-color: lightsalmon;
+}
