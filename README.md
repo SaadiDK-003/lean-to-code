@@ -1,2 +1,2 @@
-# lean-to-code
+# learn-to-code
 learn and have fun...
