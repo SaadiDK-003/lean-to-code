@@ -144,7 +144,30 @@ header .desktop-menu a button{
 
 .about-us .grid-items .item{
     background-color: lightgreen;
+    margin: 5px;
+
 }
-.about-us .grid-items .item:last-child{
+.item-info h1{
+    text-align: center;
+    font-size:30px;
+    font-family: 'Montserrat', sans-serif;
+    color: crimson;
+    margin: 10px;
+
+}
+.item-info p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 18px;
+    margin:15px;
+
+}
+.about-us .grid-items .item-img{
     background-color: lightsalmon;
+    margin: 5px;
+    background-image:url(../img/usb.jpg);
+    background-position: center;
+    background-size: cover;
+    
 }
